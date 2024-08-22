@@ -48,12 +48,44 @@ public class principal {
 
     public static void ex03() {
         Scanner sc = new Scanner(System.in);
-        // ....
+        int[] vet = new int[6];
+         for (int i = 0; i < 6; i++ ){
+             System.out.printf("Entre com o número %d : \n", i);
+             vet[i] = sc.nextInt();
+         }
+
+         for (int i = 5; i >= 0; i-- ){
+             System.out.printf("%d ", vet[i]);
+         }
+    }
+
+
+
+    public static void ex04(){
+        Scanner sc = new Scanner(System.in);
+        int[] vet = new int[6];
+        int i = 0;
+        int var = 0;
+        while( true ){
+            System.out.printf("Digite  um número:");
+            var = sc.nextInt();
+            System.out.printf("\n");
+
+            if(var % 2 == 0){
+                vet[i] = var;
+                i++;
+            } else{
+                System.out.printf("valor inválido: \n");
+            }
+            if( i == 6) break;
+        }
     }
 
     public static void main(String[] args) {
-        // ex01();
-        ex02();
+        //ex01();
+        //ex02();
+        //ex03();
+        ex04();
     }
 
 
