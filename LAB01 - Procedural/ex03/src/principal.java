@@ -79,7 +79,6 @@ class Aluno{
     int matricula;
     char classeSocial;
     float CRA;
-
     Aluno(int matricula, char classeSocial, float CRA){
         this.matricula = matricula;
         this.classeSocial = classeSocial;

@@ -11,8 +11,9 @@ public class Main {
         vet[2] = new Candidatos("WALACY BASILIO", "24/12/1976",
                 "masc", 2352634.00,false, 13, "Prefeito");
 
-        for(int i = 0; i < 3; i++){
-            vet[i].panfleto();
+        for(Candidatos candidato: vet){
+            candidato.panfleto();
         }
+
     }
 }
