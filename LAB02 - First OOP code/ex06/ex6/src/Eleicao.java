@@ -35,11 +35,11 @@ public class Eleicao {
 
     public void relacaoDeBens(){
         int posMaxBens = this.filterByBens();
-        System.out.printf("%s foi quem declarou mais bens; possui %.2f dinehiros \n", this.candidatos[posMaxBens].getNome(), this.candidatos[posMaxBens].getBens());
+        System.out.printf("%s foi quem declarou mais bens; possui %.2f dinheiros \n", this.candidatos[posMaxBens].getNome(), this.candidatos[posMaxBens].getBens());
         for(Candidatos nome: this.candidatos){
             if(nome.getBens() != this.candidatos[posMaxBens].getBens()){
                 double porcent = this.calculaPorcentagem(nome, posMaxBens);
-                System.out.printf("O candidato %s tem %.2f%% dos bens do mais rico \n", nome.getNome(), porcent );
+                System.out.printf("O candidato %s tem %.2f%% desses bens \n", nome.getNome(), porcent );
             }
         }
     }
