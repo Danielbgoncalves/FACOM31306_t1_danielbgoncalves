@@ -9,6 +9,8 @@ public class Main {
         Candidatos Walacy = new Candidatos("WALACY BASILIO", "24/12/1976",
                 "masc", 2352634.00,false, 13, "Prefeito");
 
+
+
         Cicero.panfleto();
         Eggert.panfleto();
         Walacy.panfleto();

@@ -6,9 +6,10 @@ public class Candidatos {
     private boolean reeleicao;
     private int nmrPartido;
     private String cargo;
+    private String nomeCidade;
 
     public Candidatos(String nome, String dataNasc, String genero,  double bens, boolean reeleicao,
-                      int nmrPartido,  String cargo  ){
+                      int nmrPartido, String cargo, String nomeCidade  ){
         this.nome = nome;
         this.dataNasc = dataNasc;
         this.genero = genero;
@@ -16,12 +17,13 @@ public class Candidatos {
         this.reeleicao = reeleicao;
         this.nmrPartido = nmrPartido;
         this.cargo = cargo;
+        this.nomeCidade = nomeCidade;
     }
 
     public void panfleto(){
         System.out.println(nome + ": nascido em " + dataNasc + ", " + genero + ". Possui " + bens +
                 " reais. É candidato à reeleição? " + reeleicao + ". O número do partido é: " + nmrPartido +
-                " e concorre a " + cargo + ".");
+                " e concorre a " + cargo + " Ele é de " + nomeCidade ".");
     }
 
     public String getNome() {
