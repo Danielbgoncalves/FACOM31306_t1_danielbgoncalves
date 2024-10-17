@@ -3,10 +3,11 @@ public class Esfera extends FormaTridimensional{
 
     public Esfera(String nome, float raio){
         super(nome);
+        this.raio = raio;
     }
 
     public float obterVolume(){
-        return  (float)(4.0/3.0 * Math.PI * Math.pow(raio, 3.0));
+        return (4.0f/3.0f) * (float)Math.PI * raio * raio * raio ;
     }
 
     public float obterArea(){
