@@ -13,6 +13,20 @@ public class EstudanteGraduacao extends Estudante {
                 '}');
     }
 
+    public void print(boolean linhaUnica) {
+        super.print();
+        if(linhaUnica){
+            System.out.println("EstudanteGraduacao{" +
+                    "tituloTCC='" + tituloTCC + '\'' +
+                    '}');
+        } else {
+            System.out.println("EstudanteGraduacao{" +
+                    "tituloTCC='" + tituloTCC + '\'' +
+                    '}');
+        }
+
+    }
+
     public String getTituloTCC() {
         return tituloTCC;
     }

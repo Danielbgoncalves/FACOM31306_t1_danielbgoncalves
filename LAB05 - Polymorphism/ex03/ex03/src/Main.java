@@ -55,49 +55,8 @@ public class Main {
         eg.getTituloTCC();
         ev[0].print();;
         String x = ((EstudanteGraduacao) ev[0]).getTituloTCC();
-//        String x2 = ((EstudantePosGrad) ev[0]).getFormacao();
 
 
-
-        e2.print();
-        eg2.print();
-        epd2.print();
-        ep2.print();
-        epd2.print();
-     //   EstudanteDoutorado epd3;
-      //  epd3 = (EstudanteDoutorado)epd2;
-       // System.out.println(epd3.getTituloTese());
-       // System.out.println(((EstudanteDoutorado)epd2).getTituloTese());
-
-/*
-        eg2.print();
-        System.out.println(eg2.getTituloTCC());
-
-        ep2.print();
-        System.out.println(ep2.getFormacao());
-
-        epm2.print();
-        System.out.println(epm2.getTituloDissertacao());
-
-*/
-        /*
-        Estudante e2 = new Estudante();
-        Estudante eg2 = new EstudanteGraduacao();
-        Estudante ep2 = new EstudantePosGrad();
-        Estudante epm2 = new EstudanteMestrado();
-        Estudante epd2 = new EstudanteDoutorado();
-
-        //EstudantePosGrad e3 = new Estudante();
-        //EstudantePosGrad eg3 = new EstudanteGraduacao();
-        */
-
-        // polimorfismo com pós-graduação
-        // construtor incompleto
-        /*
-        EstudantePosGrad ep3 = new EstudantePosGrad();
-        EstudantePosGrad epm3 = new EstudanteMestrado();
-        EstudantePosGrad epd3 = new EstudanteDoutorado();
-        */
 
 
 

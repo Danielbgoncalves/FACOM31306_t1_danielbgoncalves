@@ -18,6 +18,22 @@ public class EstudanteMestrado extends EstudantePosGrad {
                 '}');
     }
 
+    public void print( boolean linhaUnica) {
+        super.print();
+        if(linhaUnica){
+            System.out.println("EstudanteMestrado{" +
+                    "tipo='" + tipo + "' ;" +
+                    ", tituloDissertacao='" + tituloDissertacao + '\'' +
+                    '}');
+        } else {
+            System.out.println("EstudanteMestrado{" +
+                    "tipo='" + tipo + "\' \n" +
+                    ", tituloDissertacao='" + tituloDissertacao + '\'' +
+                    '}');
+        }
+
+    }
+
     public String getTipo() {
         return tipo;
     }

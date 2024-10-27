@@ -17,6 +17,21 @@ public class EstudantePosGrad extends Estudante {
                 '}');
     }
 
+    public void print(boolean linhaUnica) {
+        super.print();
+        if(linhaUnica) {
+            System.out.println("EstudantePosGrad{" +
+                    "formacao='" + formacao + "' ;" +
+                    ", linhadDePesquisa='" + linhaDePesquisa + '\'' +
+                    '}');
+        } else {
+            System.out.println("EstudantePosGrad{" +
+                    "formacao='" + formacao + "' \n" +
+                    ", linhadDePesquisa='" + linhaDePesquisa + "'" +
+                    '}');
+        }
+    }
+
     public String getFormacao() {
         return formacao;
     }
