@@ -1,0 +1,25 @@
+Qual a diferença entre o throw e throws ? Justifique explicado o que cada comando faz
+
+throws fica presente na assinatura do método para avisar para o compilador e desenvolvedores que esse método
+cria ou propaga uma exeção. Já o throw lança a excessão para o catch mais próximo
+
+ `public void dividir(int numerador, int denominador) throws DivisaoPorZeroException {
+      if (denominador == 0) {
+          throw new DivisaoPorZeroException("Não é possível dividir por zero");
+      }
+      System.out.println("Resultado: " + numerador / denominador);
+  }`
+ ==================================================================================================================
+
+Indique a diferença entre checked e uncheked exceptions
+
+checkeds são exceções verificadas em tempo de compilação avisam um erros que causariam bugs, como aberturas
+de arquivos e conexões com servidores, exige tratamentos, com try-catch. unchecheked ocorrem em tempo de execeção;
+como ponteiros nulos, acessos a memórias indevidas
+
+`public void lerArquivo(String caminho) throws IOException {
+     FileReader arquivo = new FileReader(caminho); // IOException é uma checked exception
+ }
+
+ array[index] //ArrayIndexOutOfBoundsException é uma unchecked exception
+ `
