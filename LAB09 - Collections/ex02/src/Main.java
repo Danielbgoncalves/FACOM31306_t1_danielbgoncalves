@@ -9,11 +9,11 @@ public class Main {
         Estudante c = new EstudanteGraduacao("João", "Rua Sabedoria", "Análise de Dados");
 
 // Estudante de Mestrado
-        Estudante g = new EstudanteMestrado("Lucas", "Rua Conhecimento", "Engenharia",
+        Estudante d = new EstudanteMestrado("Lucas", "Rua Conhecimento", "Engenharia",
                 "Inteligência Artificial", "tecnológico", "Redes Neurais");
-        Estudante h = new EstudanteMestrado("Fernanda", "Rua Pesquisa", "Biologia",
+        Estudante e = new EstudanteMestrado("Fernanda", "Rua Pesquisa", "Biologia",
                 "Estudos de Biodiversidade", "ambiental", "Conservação de Espécies");
-        Estudante i = new EstudanteMestrado("Carlos", "Rua Ciência", "Química",
+        Estudante f = new EstudanteMestrado("Carlos", "Rua Ciência", "Química",
                 "Soluções Inorgânicas", "experimental", "Catalisadores");
 
 
@@ -23,16 +23,15 @@ public class Main {
             deque.addLast(a);
             deque.addFirst(b);
             deque.addLast(c);
-        } catch (IllegalStateException e){
-            System.out.println(e.getMessage());
+        } catch (IllegalStateException ex){
+            System.out.println(ex.getMessage());
         }
 
         deque.add(d);
         deque.add(e);
         deque.add(f);
 
-
-        for(Estudante e : deque) e.print();
+        for(Estudante es : deque) es.print();
 
 
 
